@@ -1,0 +1,25 @@
+:root {
+    --white: #FFFFFF;
+    --grey: #F8F8F8;
+    --black: #000000;
+    --orange: #FFCC47;
+
+    --quicksand: 'Quicksand';
+    --opensans: 'Open Sans';
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-bold: 700;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+

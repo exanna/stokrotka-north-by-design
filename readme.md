@@ -1,3 +1,1 @@
-# Time: 
-### 31.08.2020 17:30-18:10 project planning
-
+# Live:  https://exanna.github.io/stokrotka-north-by-design/
