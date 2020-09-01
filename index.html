@@ -8,6 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -15,7 +16,10 @@
         <!-- nav -->
         <nav class="navigation">
             <div class="logo">
-                <p class="logo__p">jurajska <span>stokrotka</span></p>
+                <a href="#">
+                    <p class="logo__p">jurajska <span>stokrotka</span>
+                    </p>
+                </a>
             </div>
             <ul class="nav">
                 <li class="nav__item">
@@ -37,7 +41,7 @@
                     <a class="nav__link" href="#">okolica</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">
+                    <a class="nav__link nav__link--orange" href="#">
                         <img src="assets/icons/contact.png" alt="Kontakt">
                         kontakt
                     </a>
@@ -46,10 +50,6 @@
         </nav>
         <!-- hero -->
         <header class="hero">
-            <div class="hero__images">
-                <img class="hero__img" src="assets/images/hero.png" alt="stokrotki">
-                <img class="hero__img" src="assets/images/hero2.png" alt="nakładka">
-            </div>
             <h1 class="hero__title">rodzinna atmosfera</h1>
             <h2 class="hero__subtitle">domowe zacisze</h2>
             <img class="flower" src="assets/images/kwiat.png" alt="stokrotka">
@@ -107,46 +107,46 @@
             <button class="btn rooms__btn">pokaż pokoje</button>
         </section>
         <!-- atrakcje -->
-        <section class="features">
-            <div class="features__activities">
-                <h3 class="title features__title">atrakcje obiektu</h3>
-                <div class="activities">
-                    <div class="activity">
-                        <img src="assets/icons/activity1.png" alt="plac zabaw" class="activity__img">
-                        <p class="activity__desc">
-                            <span>plac zabaw dla dzieci</span>
-                            <span>dwie huśtawki, piaskownica, zjeżdżalnia</span>
-                        </p>
-                    </div>
-                    <div class="activity">
-                        <img src="assets/icons/activity2.png" alt="ognisko" class="activity__img">
-                        <p class="activity__desc">
-                            miejsce na grill i ognisko
-                        </p>
-                    </div>
-                    <div class="activity">
-                        <img src="assets/icons/activity3.png" alt="parking" class="activity__img">
-                        <p class="activity__desc">
-                            parking
-                        </p>
-                    </div>
-                    <div class="activity">
-                        <img src="assets/icons/activity4.png" alt="basen" class="activity__img">
-                        <p class="activity__desc">
-                            basen dla dzieci w porze letniej
-                        </p>
-                    </div>
+        <section class="features__wrapper">
+            <div class="features">
+                <div class="features__activities">
+                    <h3 class="title features__title">atrakcje obiektu</h3>
+                    <div class="activities">
+                        <div class="activity">
+                            <img src="assets/icons/activity1.png" alt="plac zabaw" class="activity__img">
+                            <p class="activity__desc">
+                                <span>plac zabaw dla dzieci</span>
+                                <span>dwie huśtawki, piaskownica, zjeżdżalnia</span>
+                            </p>
+                        </div>
+                        <div class="activity">
+                            <img src="assets/icons/activity2.png" alt="ognisko" class="activity__img">
+                            <p class="activity__desc">
+                                miejsce na grill i ognisko
+                            </p>
+                        </div>
+                        <div class="activity">
+                            <img src="assets/icons/activity3.png" alt="parking" class="activity__img">
+                            <p class="activity__desc">
+                                parking
+                            </p>
+                        </div>
+                        <div class="activity">
+                            <img src="assets/icons/activity4.png" alt="basen" class="activity__img">
+                            <p class="activity__desc">
+                                basen dla dzieci w porze letniej
+                            </p>
+                        </div>
 
-                    <div class="activity">
-                        <img src="assets/icons/activity5.png" alt="wifi" class="activity__img">
-                        <p class="activity__desc">
-                            bezprzewodowy internet
-                        </p>
+                        <div class="activity">
+                            <img src="assets/icons/activity5.png" alt="wifi" class="activity__img">
+                            <p class="activity__desc">
+                                bezprzewodowy internet
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="features__img">
-                <img src="assets/images/atrakcje.png" alt="widok na plac zabaw">
+                <div class="features__img"></div>
             </div>
             <button class="btn feature__btn">galeria</button>
             <img class="flower" src="assets/images/kwiat.png" alt="stokrotka">
