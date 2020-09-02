@@ -603,9 +603,14 @@ img {
     .activities {
         padding-left: 0;
     }
-    
-    .food__p {
+
+    .reservation {
+        width: 100%;
+    }
+
+    .food__p, .reservation__p {
         max-width: 100%;
+        width: 100%;
     }
 
     .footer {
