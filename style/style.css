@@ -30,6 +30,15 @@ img {
     max-width: 100%;
 }
 
+.flower {
+    width: 100px;
+}
+
+.bars {
+    display: none;
+    width: 50px;
+}
+
 /* nawigacja */
 
 .navigation {
@@ -40,7 +49,7 @@ img {
     top: 0;
     padding: 30px 0;
     background-color: var(--white);
-    z-index: 9;
+    z-index: 111;
 }
 
 .logo, .logo a {
@@ -88,7 +97,6 @@ img {
 }
 
 .nav__link--orange img {
-
     margin-right: 10px;
 }
 
@@ -138,7 +146,7 @@ img {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
-    z-index: 999;
+    z-index: 99;
 }
 
 .title {
@@ -237,7 +245,7 @@ img {
     padding: 30px 50px;
     display: flex; 
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -245,7 +253,7 @@ img {
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    padding: 0 200px;
+    padding: 0 20px;
     margin-top: 50px;
 }
 
@@ -261,6 +269,7 @@ img {
 
 .activity__desc span {
     display: block;
+    width: 100%;
 }
 
 .activity__img {
@@ -396,10 +405,15 @@ img {
 }
 
 .map {
+    background-image: url('../assets/images/mapa.png');
+    background-position: center center;
+    background-size: cover;
     width: 50%;
+    height: 70vh;
 }
 .contact {
     width: 50%;
+    height: 70vh;
     background-color: var(--orange);
     color: white;
     padding: 50px 100px;
@@ -411,7 +425,7 @@ img {
 
 .address {
     font-family: var(--opensans);
-    dont-weight: var(--font-light);
+    font-weight: var(--font-light);
     margin-top: 90px;
 }
 
@@ -463,3 +477,140 @@ img {
     text-decoration: none;
     color: var(--white);
 }
+
+
+
+/* max-width: 1600px */
+
+@media (max-width: 1600px) { 
+
+    .room {
+        padding: 20px;
+    }
+
+    .activity {            
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .activity__desc span {
+        width: 100%;
+    }
+
+    .activity__img {
+        width: 40px;
+    }
+    .feature__btn {
+        bottom: 10px;
+    }
+
+    .food div, .food__img {
+        height: 50vh;
+    }
+}
+
+
+@media (max-width: 1200px) { 
+    .navigation {
+        padding: 30px;
+        /* justify-content: space-between; */
+    }
+    
+    .navigation--active {
+        flex-direction: column;         
+    }
+
+    .bars {
+        display: block;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+    .nav {
+        display: none;
+    }
+    
+    .nav--active{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .nav__item:nth-last-of-type(1) {
+        margin-left: 25px;    
+    }
+
+    .reservation-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reservation {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact {
+        padding: 60px;
+    }
+
+    .address {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .flower {
+        display: none;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features__activities {
+        padding-top: 0;
+    }
+
+    .activities {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 150px;
+    }
+
+    .features__img, .features__activities {
+        width: 100%;
+    }
+
+    .room {
+        max-width: 40%;
+    }
+    .neighborhood__images img {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .room {
+        max-width: 90%;
+    }
+    
+   
+    .food__p {
+        max-width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .contact, .map {
+        width: 100%;
+    }
+}
+

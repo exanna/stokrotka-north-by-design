@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -23,36 +24,37 @@
             </div>
             <ul class="nav">
                 <li class="nav__item">
-                    <a class="nav__link" href="#">o nas</a>
+                    <a class="nav__link" href="#about">o nas</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">pokoje</a>
+                    <a class="nav__link" href="#rooms">pokoje</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">atrakcje</a>
+                    <a class="nav__link" href="#attractions">atrakcje</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">rezerwacja</a>
+                    <a class="nav__link" href="#reservation">rezerwacja</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">posiłki</a>
+                    <a class="nav__link" href="#food">posiłki</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">okolica</a>
+                    <a class="nav__link" href="#neighboorhood">okolica</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link nav__link--orange" href="#">
+                    <a class="nav__link nav__link--orange" href="#contact">
                         <img src="assets/icons/contact.png" alt="Kontakt">
                         kontakt
                     </a>
                 </li>
             </ul>
+            <img class="bars" src="assets/icons/Hamburger.png" alt="Hamburger Menu">
         </nav>
         <!-- hero -->
         <header class="hero">
             <h1 class="hero__title">rodzinna atmosfera</h1>
             <h2 class="hero__subtitle">domowe zacisze</h2>
-            <img class="flower" src="assets/images/kwiat.png" alt="stokrotka">
+            <img class="flower" src="assets/images/kwiat.png" alt="stokrotka" id="about">
         </header>
         <!-- opis -->
         <section class="description">
@@ -70,7 +72,7 @@
                 Krakowsko-Częstochowska kusi sielankowym
                 wypoczynkiem wszystkich, szukających oddechu od większych miast.</p>
             <p class="description__p">Odpocznij, poczuj wiosnę, zrelaksuj się – Jurajska Stokrotka zaprasza!</p>
-            <img class="flower" src="assets/images/kwiat.png" alt="stokrotka">
+            <img class="flower" src="assets/images/kwiat.png" id="rooms" alt="stokrotka">
         </section>
         <!-- pokoje -->
         <section class="rooms">
@@ -107,7 +109,7 @@
             <button class="btn rooms__btn">pokaż pokoje</button>
         </section>
         <!-- atrakcje -->
-        <section class="features__wrapper">
+        <section class="features__wrapper" id="attractions">
             <div class="features">
                 <div class="features__activities">
                     <h3 class="title features__title">atrakcje obiektu</h3>
@@ -152,7 +154,7 @@
             <img class="flower" src="assets/images/kwiat.png" alt="stokrotka">
         </section>
         <!-- rezerwacja -->
-        <section class="reservation-wrapper">
+        <section class="reservation-wrapper" id="reservation">
             <div class="reservation__check">
                 <form>
                     <input type="text" id="my_element_id" placeholder="pobyt od" name="my_element_name"
@@ -171,7 +173,7 @@
             </div>
         </section>
         <!-- jedzenie -->
-        <section class="food">
+        <section class="food" id="food">
             <div>
                 <h3 class="title food__title">jedzenie</h3>
                 <p class="food__p">Jura Krakowsko-Częstochowska to przygody, zamki, atrakcje turystyczne i lokalne,
@@ -189,7 +191,7 @@
             <img class="flower" src="assets/images/kwiat.png" alt="stokrotka">
         </section>
         <!-- okolica -->
-        <section class="neighborhood">
+        <section class="neighborhood" id="neighboorhood">
             <h3 class="title neighborhood__title">okolica</h3>
             <div class="neighborhood__images">
                 <img src="assets/images/okolica1.png" alt="zamek">
@@ -199,9 +201,8 @@
             <button class="btn neighborhood__btn">dowiedz się więcej</button>
         </section>
         <!-- kontakt -->
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="map">
-                <img src="assets/images/mapa.png" alt="mapa">
             </div>
             <div class="contact">
                 <h3 class="title footer__title">kontakt</h3>
