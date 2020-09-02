@@ -600,6 +600,9 @@ img {
 }
 
 @media (max-width: 700px) {
+    .hero__title, .hero__subtitle {
+        font-size: 50px;
+    }
     .room {
         max-width: 90%;
     }
