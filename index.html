@@ -152,15 +152,17 @@
             <img class="flower" src="assets/images/kwiat.png" alt="stokrotka">
         </section>
         <!-- rezerwacja -->
-        <section class="reservation">
-            <div>
+        <section class="reservation-wrapper">
+            <div class="reservation__check">
                 <form>
-                    <input type="date" name="from">
-                    <input type="date" name="to">
+                    <input type="text" id="my_element_id" placeholder="pobyt od" name="my_element_name"
+                        onfocus="(this.type='date')" onblur="(this.type='text')" />
+                    <input type="text" id="my_element_id" placeholder="pobyt do" name="my_element_name"
+                        onfocus="(this.type='date')" onblur="(this.type='text')" />
                     <button class="btn reservation__btn">sprawdź dostępność</button>
                 </form>
             </div>
-            <div>
+            <div class="reservation">
                 <h3 class="title reservation__title">rezerwacja</h3>
                 <p class="reservation__p">Doba hotelowa rozpoczyna się o godzinie 14:00, kończy się o godzinie 12:00.
                     Istnieje możliwość wcześniejszego przyjazdu lub dłuższego pobytu, ale tylko po uzgodnieniu z
@@ -170,22 +172,26 @@
         </section>
         <!-- jedzenie -->
         <section class="food">
-            <h3 class="title food__title">jedzenie</h3>
-            <p class="food__p">Jura Krakowsko-Częstochowska to przygody, zamki, atrakcje turystyczne i lokalne,
-                kulinarne specjały – smaczne i
-                różnorodne.
-                Podczas pobytu warto rozpieszczać podniebienie próbując: pieczonek (ziemniaki z dodatkami przygotowane w
-                kociołku na
-                ognisku),
-                ciulimu lelowskiego, złotopotockiego pstrąga, chłopskiej zalewajki, chleba tatarczucha czy żareckich
-                obwarzanek
-                odpustowych.</p>
-            <img src="assets/images/jedzenie.png" alt="posiłek" class="food__img">
+            <div>
+                <h3 class="title food__title">jedzenie</h3>
+                <p class="food__p">Jura Krakowsko-Częstochowska to przygody, zamki, atrakcje turystyczne i lokalne,
+                    kulinarne specjały – smaczne i
+                    różnorodne.
+                    Podczas pobytu warto rozpieszczać podniebienie próbując: pieczonek (ziemniaki z dodatkami
+                    przygotowane w
+                    kociołku na
+                    ognisku),
+                    ciulimu lelowskiego, złotopotockiego pstrąga, chłopskiej zalewajki, chleba tatarczucha czy żareckich
+                    obwarzanek
+                    odpustowych.</p>
+            </div>
+            <div class="food__img"></div>
             <img class="flower" src="assets/images/kwiat.png" alt="stokrotka">
         </section>
         <!-- okolica -->
         <section class="neighborhood">
-            <div class="images">
+            <h3 class="title neighborhood__title">okolica</h3>
+            <div class="neighborhood__images">
                 <img src="assets/images/okolica1.png" alt="zamek">
                 <img src="assets/images/okolica2.png" alt="zamek">
                 <img src="assets/images/okolica3.png" alt="skała">
