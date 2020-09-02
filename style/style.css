@@ -279,6 +279,8 @@ img {
     bottom: 50%;
 }
 
+/* rezerwacja */
+
 .reservation-wrapper {
     display: flex;
     padding: 100px 0;
@@ -321,6 +323,8 @@ img {
     font-weight: var(--font-light);
 }
 
+/* jedzenie */
+
 .food {
     position: relative;
     background-color: var(--grey);
@@ -353,8 +357,8 @@ img {
 
 .food .flower {
     position: absolute;
-
 }
+
 .neighborhood {
     display: flex;
     flex-direction: column;
@@ -380,4 +384,82 @@ img {
 
 .neighborhood__btn {
     margin: 50px 0;
+}
+
+/* stopka */
+
+.footer {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-bottom: 50px;
+}
+
+.map {
+    width: 50%;
+}
+.contact {
+    width: 50%;
+    background-color: var(--orange);
+    color: white;
+    padding: 50px 100px;
+}
+
+.footer__title {
+    color: white;
+}
+
+.address {
+    font-family: var(--opensans);
+    dont-weight: var(--font-light);
+    margin-top: 90px;
+}
+
+.address span {
+    display: block;
+    padding: 5px;
+}
+
+.address div {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.address a {
+    color: white;
+    text-decoration: none;
+    font-weight: var(--font-bold);
+    padding: 0 5px;
+}
+
+.address .mail {
+    font-weight: var(--font-light);
+}
+
+.footer .flower {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/* createdby */
+
+.createdby {
+    background-color: var(--orange);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--opensans);
+    font-weight: var(--font-light);
+    font-size: 14px;
+}
+
+.createdby a {
+    text-decoration: none;
+    color: var(--white);
 }
