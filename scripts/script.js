@@ -14,10 +14,12 @@ const openMenu = () => {
 
 const showPolicy = () => {
     modal.classList.add('modal--show');
+    document.querySelector('.wrapper').style.filter = 'blur(4px)';
 }
 
 const hidePolicy = () => {
     modal.classList.remove('modal--show');
+    document.querySelector('.wrapper').style.filter = 'blur(0)';
 }
 
 bars.addEventListener('click', openMenu);
