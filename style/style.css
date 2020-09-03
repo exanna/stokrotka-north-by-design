@@ -75,6 +75,9 @@ img {
     filter: brightness(0.4);
 }
 
+.btn:focus {
+    outline: none;
+}
 /* nawigacja */
 
 .navigation {
@@ -228,8 +231,46 @@ img {
 .room {
     max-width: 30%;
     padding: 50px;
+    position: relative;    
 }
 
+.flip-box-back {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-family: var(--opensans);
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.flip-box-back span {
+    font-size: 18px;
+    font-weight: var(--font-bold);
+    margin-bottom: 5px;
+}
+
+.flip-box-back p {
+    margin-bottom: 40px;
+}
+
+.flip-box-back .flower {
+    margin-bottom: 20px;
+}
+
+.room:hover .flip-box-back {
+    
+    opacity: 1;
+}
 /* atrakcje */
 
 .features__wrapper {
@@ -371,7 +412,9 @@ img {
     background-image: url('../assets/images/jedzenie.png');
     height: 40vh;
     width: 100%;
-    background-position: center center;
+    background-repeat: no-repeat;
+  	background-attachment: fixed;
+    background-position: 100% auto;
     background-size: cover;
 }
 
@@ -471,6 +514,10 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
+}
+
+.footer__title {
+    text-align: left;
 }
 
 /* createdby */
@@ -651,4 +698,39 @@ img {
         margin-top: 30px;
     }
 
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: cadetblue;
+    z-index: 999;
+    padding: 80px;
+    font-family: var(--opensans);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.modal--show {
+    display: flex;
+}
+
+.modal p {
+    width: 100%;
+}
+
+.accept, .x {
+    border: none;
+    background-color: var(--orange);
+    padding: 20px 40px;
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    margin-top: 50px;
 }
